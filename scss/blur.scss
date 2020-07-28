@@ -1,0 +1,9 @@
+.blur{
+    display: none;
+    position: fixed;
+    background-color: $headerMenuBG;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    opacity: 0.9;
+}

@@ -1,0 +1,122 @@
+.nav{
+    background-color: $headerMenuBG;
+    width: 320px;
+    box-shadow: 16px 0px 52px $navShadowFirst, -2px 0px 4px $navShadowSecond;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &__header{
+        display: flex;
+        align-items: center;
+        padding: 18px 24px;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+   
+    &__icon{
+        vertical-align: middle;
+        &--chat{
+            margin: 0px 16px;
+        }
+    }
+    &__buttons{
+
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-left: 24px;
+        margin-bottom: 268px;
+        margin-bottom: 25px;
+        &--elem{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 32px;
+               margin-bottom: auto;
+            }
+        }
+        &--link{
+            color: $desktopTextMediaColor;
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+            &:hover{
+                color: $buttonsLinkColor;
+                transition-duration: 1s;
+            }
+            &:hover::before{
+                content: "";
+                background: $descriptionHeadingBefore;
+                width: 4px;
+                height: 25px;
+                display: inline-block;
+                position: absolute;
+                left: 0px;
+            }   
+        }
+    }
+    &__connect{
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        margin-bottom: 16px;
+    }
+    &__email{
+        margin-left: 24px;
+        margin-bottom: 12px; 
+    }
+    &__phone{
+        margin-left: 24px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+    &__footer{
+        margin-left: 24px;
+        margin-bottom: 32px;
+    }
+    &__lang{
+        border: 0;
+        background-color: $navLangBG;
+        margin-right: 7px;
+        transition: 0.3s;
+        &:hover{
+            color: $buttonsLinkColor;
+            transform: scale(1.5);
+        }
+    }
+
+}
+
+
+@media (min-width: 1440px){
+    .nav{
+        position: absolute;
+       z-index: 1;
+        box-shadow: none;
+        &__link--rotate{
+            display: none;
+        }
+        &__list{
+            margin-bottom: 250px;
+            &--elem{
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+@media (min-height: 1024px){
+    .nav{
+        &__list{
+            margin-bottom: 250px;
+            &--elem{
+                margin-bottom: 32px;
+            }
+        }
+    }
+} 

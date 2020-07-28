@@ -1,0 +1,15 @@
+.clarification{
+    font-size: 14px;
+    line-height: 16px;
+    color: $buttonsLinkColor;
+    &__rights{
+        text-decoration: none;
+        color: $orderBG;
+    }
+    &--bell{
+        margin: 16px 16px 23px 16px;
+    }
+    &--feedback{
+        margin: 16px 16px 23px 16px;
+    }
+}

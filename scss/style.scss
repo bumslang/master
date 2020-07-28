@@ -1,0 +1,63 @@
+$headerMenuBG: #ffffff;
+$headerMediaBG: #F8F8F8;
+$desktopTextMediaColor: #1B1C21;
+$pseudoBG: #eaeaea;
+$descriptionHeadingBefore: #41F6D7;
+$buttonsLinkColor: #7E7E82;
+$buttonsLinkHoverBG: #FFFFFF;
+$buttonsLinkHoverBorder: #B8FFEC;
+$serviceBG: #F2F2F2;
+$priceColor: #1B1C21;
+$priceOrderShadow:   rgb(67, 129, 145);
+$orderBG: #FF3E79;
+$navShadowFirst: rgba(14, 24, 80, 0.2);
+$navShadowSecond: rgba(69, 79, 126, 0.02);
+$navLangBG: transparent;
+$moreHover: red;
+$containerBorder: rgb(68, 76, 124);
+$bellBG: rgba(255, 255, 255, 0.9);
+
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: TT Lakes, sans-serif;
+  
+}
+
+@font-face{ 
+  font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Regular.woff") format("woff");
+}
+
+@import './header.scss';
+@import './desktop.scss';
+@import './menu.scss';
+@import './main.scss';
+@import './description.scss';
+@import './buttons.scss';
+@import './detales.scss';
+@import './swiper.min.css';
+@import './brands.scss';
+@import './service.scss';
+@import './more.scss';
+@import './price.scss';
+@import './footer.scss';
+@import './nav.scss';
+@import './container.scss';
+@import './blur.scss';
+@import './hidden.scss';
+@import './visible.scss';
+@import './item.scss';
+@import './order.scss';
+@import './feedback.scss';
+@import './bell.scss';
+@import './clarification.scss';
+@import './input.scss';
+
+
+
+
+
+

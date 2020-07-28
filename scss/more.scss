@@ -1,0 +1,32 @@
+.more{
+    
+    &__icon{
+
+    }
+    &__text{
+
+    }
+}
+
+@media (min-width: 768px){
+    .more{
+        display: flex;
+        cursor: pointer;
+        &__icon{
+    
+        }
+        &__text{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: $desktopTextMediaColor;
+            transition-duration: 0.3s;
+            &:hover{
+                transform: scale(1.1);
+                color: $moreHover;
+            }
+        }
+    }
+}
+

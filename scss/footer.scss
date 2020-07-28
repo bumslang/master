@@ -1,0 +1,82 @@
+.footer{
+    background: $headerMediaBG;
+    color: $buttonsLinkColor;
+    font-size: 14px;
+    &--margin{
+        margin: auto;
+        background-color: $headerMenuBG;
+    }
+    &__info{
+        background: $serviceBG;
+        margin: auto;
+        max-width: 1120px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+    }
+    &__elem{
+        margin-bottom: 16px;
+        &--command{
+
+        }
+        &--confid{
+
+        }
+        &--rights{
+
+        }
+    }
+    &__span{
+        display: block;
+    }
+}
+
+@media (min-width: 768px){
+    .footer{
+        &__info{
+            flex-direction: row;
+            padding: 16px;
+            padding-left: 32px;
+        }
+        &__elem{
+            width: 33%;
+            text-align: left;
+            &--command{
+    
+            }
+            &--confid{
+    
+            }
+            &--rights{
+                text-align: right;
+            }
+        }
+        &__span{
+    
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .footer{
+        &__info{
+            margin: 0 0 0 auto;
+        }
+        &__elem{
+            &--command{
+    
+            }
+            &--confid{
+    
+            }
+            &--rights{
+            }
+        }
+        &__span{
+    
+        }
+    }
+}
+
+

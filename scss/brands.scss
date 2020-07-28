@@ -1,0 +1,133 @@
+.brands{
+    background: $serviceBG;
+    padding-bottom: 1px;
+    &__caption{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: $buttonsLinkColor;
+        padding: 16px;
+        background: linear-gradient(270deg, $headerMediaBG 0%, $headerMenuBG 98.61%);
+    }
+    &__heading{
+
+    }
+    &__container{
+        padding: 16px 16px 66px 16px;
+    }
+    &__wripper{
+
+    }
+    &__item{
+        width: 224px;
+        height: 72px;
+        background-color: $headerMenuBG;
+        border: 1px solid $pseudoBG;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+    &__img{
+
+    }
+    &__link{
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &--img{
+            vertical-align: middle;
+        }
+    }
+    &__more{
+        display: none;
+        &--icon{
+
+        }
+        &--text{
+
+        }
+    }
+
+}
+
+@media (min-width: 768px){
+    .brands{
+        &__heading{
+            width: 744px;
+            margin: auto;
+            padding-left: 20px;
+        }
+        &__container{
+            padding: 0;
+        }
+        &__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 12px auto 8px auto;
+            height: 176px;
+            width: 744px;
+            &--height{
+                height: 364px;
+              }
+        }
+        &__item{
+            margin: 12px 12px 8px 12px;
+        }
+        &__more{
+            display: flex;
+            cursor: pointer;
+            margin-left: 22px;
+            position: relative;
+            margin: 30px auto 10px; 
+            width: 728px;
+            &--text{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                color: #1B1C21;
+                transition-duration: 0.3s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: $moreHover;
+                }
+            }
+        }
+        
+    }
+    .swiper-pagination{
+        display: none;
+    }
+}
+
+@media (min-width: 1120px){
+    .brands{
+        &__caption{
+            padding-left: 0;
+        }
+        &__heading{
+            width: auto;
+            padding-left: 35px;
+        }
+        &__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 12px 16px 8px 16px;
+            width: auto;
+            &--height{
+                height: 275px;
+            }
+        }
+        
+        &__item{
+            width: 240px;
+           margin: 12px 16px 8px 16px;
+        }
+        &__more{
+            width: 1058px;
+        }
+    }
+}

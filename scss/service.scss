@@ -1,0 +1,116 @@
+.service{
+    background: $serviceBG;
+	padding-bottom: 1px;
+    &__caption{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: $buttonsLinkColor;
+        background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+        padding: 16px;
+    }
+    &__heading{
+      
+    }
+    &__container{
+        padding: 16px 16px 52px 16px;
+    }
+    &__wrapper{
+
+    }
+    &__item{
+        width: 240px;
+        height: 160px;
+        background-color: $headerMenuBG;
+        border: 1px solid $pseudoBG;
+        border-radius: 6px;
+        display: flex;
+        -ms-flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+    &__name{
+        align-self: flex-start;
+        white-space: nowrap;
+    }
+    &__link{
+        align-self: flex-end;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &--icon{
+            vertical-align: middle;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .service{
+        &__heading{
+            width: 744px;
+            margin: auto;
+            padding-left: 20px;
+        }
+        &__container{
+            padding: 0;
+        }
+        &__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 12px auto 8px auto;
+            height: 176px;
+            width: 744px;
+        }
+        &__item{
+            width: 224px;
+            height: 160px;
+            margin: 12px 12px 8px 12px;
+        }
+        &__name{
+        }
+        &__link{
+            &--icon{
+            }
+        }
+        &__wrapper--height{
+            height: 707px;
+        }
+    }
+    .swiper-pagination{
+        display: none;
+    }
+}
+
+@media (min-width: 1120px){
+    .service{
+        &__heading{
+            padding-left: 0;
+            width: auto;
+	        padding-left: 35px;
+        }
+        &__container{
+            
+        }
+        &__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 12px 16px 8px 16px;
+            width: auto;
+        }
+        &__item{
+            width: 240px;
+            margin: 12px 16px 8px 16px;
+        }
+        &__name{
+        }
+        &__link{
+            &--icon{
+            }
+        }
+        &__wrapper--height{
+            height: 528px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.order{
+    display: flex;
+    background: $orderBG;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $headerMenuBG;
+    text-decoration: none;
+    padding: 4px 12px;
+    align-self: flex-end;
+    border: none;
+    &:hover{
+        box-shadow: 4px 4px 2px 0 $priceOrderShadow;
+        transition: 0.1s;
+    }
+    &__icon{
+        padding-left: 10px;
+        margin: auto;
+    }
+    &__feedback{
+        margin: 0 16px 75px 0;
+    }
+}

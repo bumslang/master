@@ -1,0 +1,13 @@
+.input{
+    background: $headerMenuBG;
+    border: 1px solid $pseudoBG;
+    border-radius: 8px;
+    height: 48px;
+    padding-left: 16px;
+    &--bell{
+        margin: 0 16px 16px;
+    }
+    &--feedback{
+        margin: 0 16px 16px;
+    }
+}

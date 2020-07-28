@@ -1,0 +1,99 @@
+/* -------------detales--------------- */
+.detales{
+    &__text{
+        margin: 0px 16px 16px 16px;
+    }
+    &__caption{
+        font-size: 14px;
+        color: $desktopTextMediaColor;
+    }
+    &__caption--visible{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: $desktopTextMediaColor;
+        margin-bottom: 16px;
+    }
+    &__caption--tablet{
+        display: none;
+    }
+    &__caption--desktop{
+        display: none;
+    }
+    &__more{
+        display: flex;
+        align-items: baseline;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        transition: 0.3s;
+        &:hover{
+            color: blue;
+        }
+        color: $desktopTextMediaColor;
+        cursor: pointer;
+        &--icon{
+            margin-right: 16px;
+        }
+        &--next{
+            font-size: 16px;
+            letter-spacing: -0.2px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+        &--transform{
+            transform: rotate(180deg);
+        }
+    }
+    &__img{
+        width: 100%;
+        max-width: 532px;
+    }
+    &--visible{
+        display: inline;
+    }
+}
+
+@media (min-width: 768px){
+    .detales{
+        &__text{
+            margin-left: 24px;
+            margin-right: 6%;
+        }
+        &__caption{
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        &__caption--visible{
+            margin-bottom: 25px;
+        }
+        &__caption--tablet{
+            display: inline;
+        }
+        &__img{
+            width: 360px;
+            margin-right: 24px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (min-width: 1120px){
+    .detales{
+        &__text{
+            margin-left: 0px;
+            margin-right: auto;
+            width: 44%;
+        }
+        &__caption--desktop{
+            display: inline;
+        }
+        &__more{
+            display: none;
+        }
+        &__img{
+            width: 531px;
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* ----------buttons--------------- */
+.buttons{
+    background: $headerMediaBG;
+    &__link{
+        text-decoration: none;
+        border-radius: 6px;
+        padding: 8px 9.3px 8px 16px;
+        white-space: nowrap;
+        color: $buttonsLinkColor;
+        border: 2px solid $navLangBG;
+        &:hover{
+            background: $buttonsLinkHoverBG;
+            border: 2px solid $buttonsLinkHoverBorder;
+        }
+    }
+}
+
+@media (min-width: 1120px){
+    .buttons{
+        &__link{
+            padding: 8px 20px ;
+        }
+    }
+}

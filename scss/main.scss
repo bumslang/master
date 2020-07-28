@@ -1,0 +1,69 @@
+/* -----------------main----------- */
+.main{
+    background: $headerMenuBG;
+    &__description{
+
+    }
+    &__more{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .main{
+        &__description{
+            max-width: 1120px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+        &__brands{
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        &__service{
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        &__more{
+            margin-left: 22px;
+            margin: 30px auto 10px; 
+            width: 728px;
+        }
+        &__price{
+            min-width: 768px;
+            max-width: 1120px;
+            margin: 0 auto;
+          }
+        
+    }
+}    
+
+@media (min-width: 1120px){
+    .main{
+        &__more{
+            width: 1058px;
+        }
+    }
+    
+}
+
+@media (min-width: 1440px){
+    .main{
+        &__description{
+            margin: 0 0 0 auto;
+        }
+        &__brands{
+            margin: 0 0 0 auto;
+        }
+        &__service{
+            margin: 0 0 0 auto;
+        }
+        &__more{
+            margin: 0 0 0 auto;
+        }
+        &__price{
+            margin: 0 0 0 auto;
+        }
+        
+    }
+}    

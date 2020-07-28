@@ -1,0 +1,35 @@
+.menu{
+    &__item{
+        margin: 0px 8px;
+        vertical-align: middle; 
+    }
+  
+    &__img{
+
+    }
+    &__line{
+        &:last-child{
+            display: none;
+        }
+    }
+    &__text--hidden{
+
+    }
+    
+}
+
+@media (min-width: 768px){
+    .menu{
+        &__item{
+          
+        }
+      
+        &__text--hidden{
+            display: none;
+        }
+        &__img{
+    
+        }
+        
+    }
+}
